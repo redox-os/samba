@@ -132,6 +132,11 @@ def gcc_modifier_osf1V(conf):
 	v.SONAME_ST           = []
 
 @conf
+def gcc_modifier_redox(conf):
+	v = conf.env
+	v.SHLIB_MARKER        = []
+
+@conf
 def gcc_modifier_platform(conf):
 	"""Execute platform-specific functions based on *gcc_modifier_+NAME*"""
 	# * set configurations specific for a platform.
