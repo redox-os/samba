@@ -45,7 +45,8 @@ MACRO_TO_DESTOS = {
 '__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__'  : 'darwin',
 '__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__' : 'darwin', # iphone
 '__QNX__'                                        : 'qnx',
-'__native_client__'                              : 'nacl' # google native client platform
+'__native_client__'                              : 'nacl', # google native client platform
+'__redox__'                                      : 'redox'
 }
 
 MACRO_TO_DEST_CPU = {
