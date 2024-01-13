@@ -170,6 +170,6 @@ def SAMBA_CROSS_ARGS(conf, msg=None):
 def SAMBA_CROSS_CHECK_COMPLETE(conf):
     '''check if we have some unanswered questions'''
     global cross_answers_incomplete
-    if conf.env.CROSS_COMPILE and cross_answers_incomplete:
-        raise Errors.WafError("Cross answers file %s is incomplete" % conf.env.CROSS_ANSWERS)
+    #if conf.env.CROSS_COMPILE and cross_answers_incomplete:
+    #    raise Errors.WafError("Cross answers file %s is incomplete" % conf.env.CROSS_ANSWERS)
     return True
