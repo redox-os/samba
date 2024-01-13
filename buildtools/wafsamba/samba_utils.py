@@ -82,7 +82,7 @@ Configure.conftest = conf
 def SET_TARGET_TYPE(ctx, target, value):
     '''set the target type of a target'''
     cache = LOCAL_CACHE(ctx, 'TARGET_TYPE')
-    if target in cache and cache[target] != 'EMPTY':
+    if target in cache and cache[target] != 'EMPTY' and value != cache[target]:
         Logs.error("ERROR: Target '%s' in directory %s re-defined as %s - was %s" % (target, ctx.path.abspath(), value, cache[target]))
         sys.exit(1)
     LOCAL_CACHE_SET(ctx, 'TARGET_TYPE', target, value)
